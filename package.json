@@ -4,11 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "selenium-standalone install",
+    "test": "jest ./test/standalone"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "babel-jest": "^20.0.1",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-flow": "^6.23.0",
+    "jest": "^20.0.1",
+    "selenium-standalone": "^6.4.1",
     "webdriverio": "^4.8.0"
   }
 }
