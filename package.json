@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel test --out-dir testlib",
     "pretest": "selenium-standalone install",
     "test": "jest ./test/standalone",
     "test-wdio": "wdio ./test/wdio.multiremote.config.js"
@@ -12,13 +11,11 @@
   "author": "Jan-André Zinser",
   "license": "MIT",
   "devDependencies": {
-    "babel-cli": "^6.24.1",
     "babel-jest": "^20.0.1",
     "babel-preset-env": "^1.4.0",
     "babel-preset-flow": "^6.23.0",
     "babel-register": "^6.24.1",
     "jest": "^20.0.1",
-    "regenerator-runtime": "^0.10.5",
     "selenium-standalone": "^6.4.1",
     "wdio-mocha-framework": "^0.5.10",
     "wdio-selenium-standalone-service": "0.0.8",

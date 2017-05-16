@@ -1,5 +1,4 @@
-require("babel-polyfill");
-require("regenerator-runtime");
+
 exports.config = {
   specs: [
     'test/runner/**'
