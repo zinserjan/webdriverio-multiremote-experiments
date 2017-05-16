@@ -5,12 +5,12 @@ exports.config = {
     'test/runner/**'
   ],
   capabilities: {
-    chrome1: {
+    browserA: {
       desiredCapabilities: {
         browserName: 'chrome'
       }
     },
-    chrome2: {
+    browserB: {
       desiredCapabilities: {
         browserName: 'chrome'
       }
@@ -22,7 +22,7 @@ exports.config = {
   reporters: ['dot'],
   mochaOpts: {
     ui: 'bdd',
-    compilers: ['js:babel-register'],
-    require: ["babel-polyfill"]
+    timeout: 120000,
+    compilers: ['js:babel-register']
   }
 };
